@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: "PolicyForReact",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000")
+            policy.AllowAnyOrigin()
                 .AllowAnyHeader()
                 .AllowAnyMethod();
         });
@@ -20,9 +20,17 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseCors("PolicyForReact");
 
-app.UseHttpsRedirection();
+app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
+
+app.UseHttpsRedirection();
 
 app.MapControllers();
 

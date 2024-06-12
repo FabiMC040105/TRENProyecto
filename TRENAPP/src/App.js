@@ -2,7 +2,8 @@ import logo from './favicon.png';
 import Registro from './Registro';
 import Login from './Login';
 import MenuPrincipal from './MenuPrincipal';
-import GraphComponent from './GraphComponent'; 
+import GraphComponent from './GraphComponent';
+import grafo from './GraphComponent';
 import RutaTrenes from './RutaTrenes';
 import React, { useEffect, useState } from 'react';
 import { GetTrainRoutes } from './Controller';
@@ -45,6 +46,7 @@ function App() {
 
   function IngresaUsuario() {
     setView('menuPrincipal');
+
   }
 
   function NavegarARutaTrenes() {
@@ -62,6 +64,8 @@ function App() {
   function postData(){
     
   }
+
+
 
   return (
     <div className="App">
