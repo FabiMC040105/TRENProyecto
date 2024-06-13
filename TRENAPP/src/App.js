@@ -1,16 +1,36 @@
 import logo from './favicon.png';
-import { useState } from 'react';
 import Registro from './Registro';
 import Login from './Login';
 import MenuPrincipal from './MenuPrincipal';
-import GraphComponent from './GraphComponent'; 
+import GraphComponent from './GraphComponent';
+import grafo from './GraphComponent';
 import RutaTrenes from './RutaTrenes';
 import ComprarTiquetes from './ComprarTiquetes';
+import React, { useEffect, useState } from 'react';
+import { GetTrainRoutes } from './Controller';
 
 function App() {
   const [view, setView] = useState('home'); 
   const [estaciones, setEstaciones] = useState([]); 
   const [conexion, setConexiones] = useState([]);
+  
+  const [routes, setRoutes] = useState([]);
+  const [currentTime, setCurrentTime] = useState(Date().toLocaleString());
+
+  useEffect(() => {
+    async function loadData() {
+      let routes = await GetTrainRoutes();
+      setRoutes(routes);
+    }
+
+    setInterval(() => {
+      setCurrentTime(Date().toLocaleString());
+    }, 1000)
+
+    setInterval(() => {
+      loadData();
+    }, 5000)
+  }, []);
 
   function NavegaRegistro() {
     setView('registro');
@@ -27,6 +47,7 @@ function App() {
 
   function IngresaUsuario() {
     setView('menuPrincipal');
+
   }
 
   function NavegarARutaTrenes() {
@@ -45,9 +66,34 @@ function App() {
     setView('menuPrincipal');
   }
 
+  function postData(){
+    
+  }
+
+
+
   return (
     <div className="App">
       <header className="App-header">
+      {currentTime}
+      <table>
+        <thead>
+          <tr>
+            <th>Start</th>
+            <th>End</th>
+            <th>Cost</th>
+            <th>Distance</th>
+          </tr>
+        </thead>
+      {routes.map((element, index) => 
+        <tr id={index}>
+          <td>{element.start}</td>
+          <td>{element.end}</td>
+          <td>{element.cost}</td>
+          <td>{element.distanceInKm}</td>
+        </tr>
+      )}    
+      </table>  
         {view === 'home' && (
           <div>
             <img src={logo} className="App-logo" alt="logo" />
@@ -57,9 +103,9 @@ function App() {
             <button onClick={NavegaLogin}>Iniciar Sesion</button>
           </div>
         )}
-
         {view === 'registro' && (
           <div>
+            <button onClick={postData}>Enviar Datos</button>
             <br />
             <Registro />
             <button onClick={RegistroUsuario}>Registrar Usuario</button>

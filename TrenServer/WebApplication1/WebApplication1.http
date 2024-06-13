@@ -1,0 +1,5 @@
+@WebApplication1_HostAddress = https://localhost:7154/api/Rutas
+
+GET {{WebApplication1_HostAddress}}
+Accept: application/json
+
