@@ -22,13 +22,14 @@ namespace WebApplication1.Controllers
 
             // Imprimir el objeto graph en la consola
             Console.WriteLine("Graph received:");
-            Console.WriteLine($"Nodes: {string.Join(", ", graph.nodes)}");
-            Console.WriteLine($"Links: {string.Join(", ", graph.links)}");
+            graph.PrintGraph();
+            //Console.WriteLine($"Nodes: {string.Join(", ", graph.nodes)}");
+            //Console.WriteLine($"Links: {string.Join(", ", graph.links)}");
 
             // Procesar los datos del grafo
             // Por ejemplo, guardarlos en una base de datos o realizar alguna operación con ellos
 
-            return Ok("Graph received successfully.");
+            return Ok(new { message = "Graph received successfully.", graph });
         }
     }
 }
