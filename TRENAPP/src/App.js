@@ -5,6 +5,7 @@ import Login from './Login';
 import MenuPrincipal from './MenuPrincipal';
 import GraphComponent from './GraphComponent'; 
 import RutaTrenes from './RutaTrenes';
+import ComprarTiquetes from './ComprarTiquetes';
 
 function App() {
   const [view, setView] = useState('home'); 
@@ -30,6 +31,10 @@ function App() {
 
   function NavegarARutaTrenes() {
     setView('RutaTrenes');
+  }
+
+  function NavegarAComprarTiquetes() {
+    setView('comprarTiquetes');
   }
 
   function VolverAHome() {
@@ -74,7 +79,10 @@ function App() {
         )}
 
         {view === 'menuPrincipal' && (
-          <MenuPrincipal navegarARutaTrenes={NavegarARutaTrenes} />
+          <MenuPrincipal 
+          navegarARutaTrenes={NavegarARutaTrenes} 
+          navegarAComprarTiquetes={NavegarAComprarTiquetes}
+          />
         )}
 
         {view === 'RutaTrenes' && (
@@ -84,6 +92,13 @@ function App() {
             <button 
               onClick={VolverAMenuPrincipal}>Volver al Menú Principal
             </button>
+          </div>
+        )}
+
+        {view === 'comprarTiquetes' && (
+          <div>
+            <ComprarTiquetes />
+            <button onClick={VolverAMenuPrincipal}>Volver al Menú Principal</button>
           </div>
         )}
       </header>
