@@ -124,4 +124,20 @@ function GraphComponent() {
   );
 }
 
+
 export default GraphComponent;
+export const estaciones = [
+  { id: 'Santo Domingo', name: 'Santo Domingo' },
+  { id: 'Tibás', name: 'Tibás' },
+  { id: 'San José', name: 'San José' },
+  { id: 'Zapote', name: 'Zapote' },
+  { id: 'Tres Ríos', name: 'Tres Ríos' },
+  { id: 'Cartago', name: 'Cartago' },
+  { id: 'Paraíso', name: 'Paraíso' },
+  { id: 'Heredia', name: 'Heredia' },
+  { id: 'San Pedro', name: 'San Pedro' },
+  { id: 'Sabanilla', name: 'Sabanilla' },
+  { id: 'Curridabat', name: 'Curridabat' },
+  { id: 'Guadalupe', name: 'Guadalupe' },
+  { id: 'Moravia', name: 'Moravia' },
+];

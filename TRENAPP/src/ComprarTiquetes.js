@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { estaciones } from './GraphComponent';
 
 function ComprarTiquetes() {
   const [origen, setOrigen] = useState('');
@@ -47,12 +48,26 @@ function ComprarTiquetes() {
       <form>
         <label>
           Origen:
-          <input type="text" value={origen} onChange={(e) => setOrigen(e.target.value)} />
+          <select value={origen} onChange={(e) => setOrigen(e.target.value)}>
+            <option value="">Seleccione una estación</option>
+            {estaciones.map((estacion) => (
+              <option key={estacion.id} value={estacion.id}>
+                {estacion.name}
+              </option>
+            ))}
+          </select>
         </label>
         <br />
         <label>
           Destino:
-          <input type="text" value={destino} onChange={(e) => setDestino(e.target.value)} />
+          <select value={destino} onChange={(e) => setDestino(e.target.value)}>
+            <option value="">Seleccione una estación</option>
+            {estaciones.map((estacion) => (
+              <option key={estacion.id} value={estacion.id}>
+                {estacion.name}
+              </option>
+            ))}
+          </select>
         </label>
         <br />
         <label>
@@ -73,4 +88,5 @@ function ComprarTiquetes() {
 }
 
 export default ComprarTiquetes;
+
 
