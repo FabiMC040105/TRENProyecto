@@ -5,6 +5,7 @@ import MenuPrincipal from './MenuPrincipal';
 import GraphComponent from './GraphComponent';
 import grafo from './GraphComponent';
 import RutaTrenes from './RutaTrenes';
+import ComprarTiquetes from './ComprarTiquetes';
 import React, { useEffect, useState } from 'react';
 import { GetTrainRoutes } from './Controller';
 
@@ -51,6 +52,10 @@ function App() {
 
   function NavegarARutaTrenes() {
     setView('RutaTrenes');
+  }
+
+  function NavegarAComprarTiquetes() {
+    setView('comprarTiquetes');
   }
 
   function VolverAHome() {
@@ -120,7 +125,10 @@ function App() {
         )}
 
         {view === 'menuPrincipal' && (
-          <MenuPrincipal navegarARutaTrenes={NavegarARutaTrenes} />
+          <MenuPrincipal 
+          navegarARutaTrenes={NavegarARutaTrenes} 
+          navegarAComprarTiquetes={NavegarAComprarTiquetes}
+          />
         )}
 
         {view === 'RutaTrenes' && (
@@ -130,6 +138,13 @@ function App() {
             <button 
               onClick={VolverAMenuPrincipal}>Volver al Menú Principal
             </button>
+          </div>
+        )}
+
+        {view === 'comprarTiquetes' && (
+          <div>
+            <ComprarTiquetes />
+            <button onClick={VolverAMenuPrincipal}>Volver al Menú Principal</button>
           </div>
         )}
       </header>
