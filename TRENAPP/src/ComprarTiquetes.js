@@ -22,7 +22,7 @@ function ComprarTiquetes() {
 
   const handleCompra = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/comprarTiquete', {
+      const response = await fetch('https://localhost:7154/api/Rutas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -56,6 +56,8 @@ function App() {
 
   function NavegarAComprarTiquetes() {
     setView('comprarTiquetes');
+    //
+    //
   }
 
   function VolverAHome() {
