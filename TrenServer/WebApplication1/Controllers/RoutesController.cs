@@ -8,21 +8,16 @@ namespace WebApplication1.Controllers
 {
     [Route("api/Rutas")]
     [ApiController]
+    
     public class RoutesController : ControllerBase
     {
+        private static Graph grafo;
 
-        public Graph grafo = new Graph();
-
-
-        [HttpGet]
-        public IEnumerable<TrainRoute>? GetAllRoutes()
+        static RoutesController()
         {
-            return RoutesDB.routes;
-        }
+            // Inicializar el grafo una vez en el constructor estático
+            grafo = new Graph();
 
-        [HttpPost]
-        public IActionResult PostGraph([FromBody] Graph graph)
-        {
             // Nodos del grafo
             var nodes = new[] {
                 "Santo Domingo", "Tibás", "San José", "Zapote", "Tres Ríos",
@@ -59,23 +54,55 @@ namespace WebApplication1.Controllers
             {
                 grafo.AddEdge(from, to, weight);
             }
-
-            // Imprimir el grafo
-            grafo.PrintGraph();
-
-            // Ejemplo de uso del algoritmo de Dijkstra
-            var (distance, path) = grafo.Dijkstra("Santo Domingo", "Cartago");
-            if (path != null)
-            {
-                Console.WriteLine($"Shortest path from Santo Domingo to Cartago: {string.Join(" -> ", path)} with distance {distance}");
-            }
-            else
-            {
-                Console.WriteLine("No path found from Santo Domingo to Cartago");
-            }
-
-            return Ok(new { message = "Graph received successfully.", graph });
         }
+
+        [HttpGet]
+        public IEnumerable<TrainRoute>? GetAllRoutes()
+        {
+            return RoutesDB.routes;
+        }
+
+        [HttpPost]
+        public IActionResult PostTicketPurchase([FromBody] TicketPurchaseRequest request)
+        {
+            if (string.IsNullOrEmpty(request.Origen) || string.IsNullOrEmpty(request.Destino))
+            {
+                return BadRequest("Origen y destino son requeridos.");
+            }
+
+            // Calcular la ruta más corta usando Dijkstra
+            var (distance, path) = grafo.Dijkstra(request.Origen, request.Destino);
+
+            if (path == null)
+            {
+                return NotFound("No se encontró una ruta entre los nodos especificados.");
+            }
+
+
+            // Calcular el precio total 
+            double precioBase = 25; // Precio base por kilometro
+            double precioTotal = distance*precioBase;
+            Console.WriteLine(precioTotal);
+
+            return Ok(new
+            {
+                message = "Compra realizada con éxito.",
+                Origen = request.Origen,
+                Destino = request.Destino,
+                Fecha = request.Fecha,
+                Cantidad = request.Cantidad,
+                PrecioTotal = precioTotal,
+                Distancia = distance,
+                Ruta = string.Join(" -> ", path)
+            });
+        }
+    }
+    public class TicketPurchaseRequest
+    {
+        public string Origen { get; set; }
+        public string Destino { get; set; }
+        public string Fecha { get; set; }
+        public int Cantidad { get; set; }
     }
 }
 

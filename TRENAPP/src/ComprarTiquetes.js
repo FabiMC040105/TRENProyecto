@@ -22,23 +22,24 @@ function ComprarTiquetes() {
 
   const handleCompra = async () => {
     try {
-      const response = await fetch('https://localhost:7154/api/Rutas', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ origen, destino, fecha, cantidad }),
-      });
+        const response = await fetch('https://localhost:7154/api/Rutas', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ origen, destino, fecha, cantidad }),
+        });
 
-      if (response.ok) {
-        const data = await response.json();
-        alert(`Compra realizada con éxito. Precio total: ${data.precioTotal} colones`);
-      } else {
-        alert('Error al realizar la compra');
-      }
+        if (response.ok) {
+            const data = await response.json();
+            alert(`Compra realizada con éxito. Precio total: ${data.PrecioTotal} colones. Ruta: ${data.Ruta}. Distancia: ${data.Distancia}`);
+        } else {
+            const errorText = await response.text(); // Obtener el texto del error
+            alert(`Error al realizar la compra: ${errorText}`);
+        }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error al realizar la compra');
+        console.error('Error:', error);
+        alert('Error al realizar la compra');
     }
   };
 
