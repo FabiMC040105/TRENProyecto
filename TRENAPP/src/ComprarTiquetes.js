@@ -8,17 +8,10 @@ function ComprarTiquetes() {
   const [cantidad, setCantidad] = useState(1);
   const [precioBase, setPrecioBase] = useState(100); // Precio base por tiquete
   const [precioTotal, setPrecioTotal] = useState(0);
+  const [respuestaCompra, setRespuestaCompra] = useState(null);
 
-  useEffect(() => {
-    calcularPrecioTotal();
-  }, [cantidad]);
 
-  const calcularPrecioTotal = () => {
-    let descuento = 0.02 * (cantidad - 1);
-    if (descuento > 0.9) descuento = 0.9;
-    const total = cantidad * precioBase * (1 - descuento);
-    setPrecioTotal(total);
-  };
+
 
   const handleCompra = async () => {
     try {
@@ -32,6 +25,7 @@ function ComprarTiquetes() {
 
         if (response.ok) {
             const data = await response.json();
+            setRespuestaCompra(data);
             alert(`Compra realizada con éxito. Precio total: ${data.precioTotal} colones. Ruta: ${data.ruta}. Distancia: ${data.distancia}`);
         } else {
             const errorText = await response.text(); // Obtener el texto del error
@@ -40,50 +34,56 @@ function ComprarTiquetes() {
     } catch (error) {
         console.error('Error:', error);
         alert('Error al realizar la compra');
-    }
+    } 
   };
 
   return (
     <div>
-      <h2>Comprar Tiquetes</h2>
-      <form>
-        <label>
-          Origen:
-          <select value={origen} onChange={(e) => setOrigen(e.target.value)}>
-            <option value="">Seleccione una estación</option>
-            {estaciones.map((estacion) => (
-              <option key={estacion.id} value={estacion.id}>
-                {estacion.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        <br />
-        <label>
-          Destino:
-          <select value={destino} onChange={(e) => setDestino(e.target.value)}>
-            <option value="">Seleccione una estación</option>
-            {estaciones.map((estacion) => (
-              <option key={estacion.id} value={estacion.id}>
-                {estacion.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        <br />
-        <label>
-          Fecha:
-          <input type="date" value={fecha} onChange={(e) => setFecha(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Cantidad:
-          <input type="number" value={cantidad} onChange={(e) => setCantidad(Number(e.target.value))} min="1" />
-        </label>
-        <br />
-        <button type="button" onClick={handleCompra}>Comprar</button>
-      </form>
-      <p>Precio total: {precioTotal.toFixed(2)} colones</p>
+        <h2>Comprar Tiquetes</h2>
+        <form>
+            <label>
+                Origen:
+                <select value={origen} onChange={(e) => setOrigen(e.target.value)}>
+                    <option value="">Seleccione una estación</option>
+                    {estaciones.map((estacion) => (
+                        <option key={estacion.id} value={estacion.id}>
+                            {estacion.name}
+                        </option>
+                    ))}
+                </select>
+            </label>
+            <br />
+            <label>
+                Destino:
+                <select value={destino} onChange={(e) => setDestino(e.target.value)}>
+                    <option value="">Seleccione una estación</option>
+                    {estaciones.map((estacion) => (
+                        <option key={estacion.id} value={estacion.id}>
+                            {estacion.name}
+                        </option>
+                    ))}
+                </select>
+            </label>
+            <br />
+            <label>
+                Fecha:
+                <input type="date" value={fecha} onChange={(e) => setFecha(e.target.value)} />
+            </label>
+            <br />
+            <label>
+                Cantidad:
+                <input type="number" value={cantidad} onChange={(e) => setCantidad(Number(e.target.value))} min="1" />
+            </label>
+            <br />
+            <button type="button" onClick={handleCompra}>Comprar</button>
+        </form>
+        {respuestaCompra && (
+            <p>
+                Precio total: {respuestaCompra.precioTotal} colones.<br />
+                Ruta: {respuestaCompra.ruta}.<br />
+                Distancia: {respuestaCompra.distancia}.
+            </p>
+        )}
     </div>
   );
 }

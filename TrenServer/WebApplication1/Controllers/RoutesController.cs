@@ -56,6 +56,32 @@ namespace WebApplication1.Controllers
             }
         }
 
+        private double calcularprecio(TicketPurchaseRequest request)
+        {
+            // Calcular la ruta más corta usando Dijkstra
+            var (distance, path) = grafo.Dijkstra(request.Origen, request.Destino);
+
+            // Calcular el precio total
+            double precioBase = 25; // Precio base por kilometro
+            double precioTotal = 0;
+
+            if (request.Cantidad > 1)
+            {
+                // Calcular el descuento
+                double descuento = 0.02 * (request.Cantidad - 1);
+                if (descuento > 0.9) descuento = 0.9;
+
+                // Aplicar el descuento
+                precioTotal = request.Cantidad * precioBase * distance * (1 - descuento);
+            }
+            else
+            {
+                precioTotal = request.Cantidad * precioBase * distance;
+            }
+
+            return precioTotal;
+        }
+
         [HttpGet]
         public IEnumerable<TrainRoute>? GetAllRoutes()
         {
@@ -78,11 +104,8 @@ namespace WebApplication1.Controllers
                 return NotFound("No se encontró una ruta entre los nodos especificados.");
             }
 
-
-            // Calcular el precio total 
-            double precioBase = 25; // Precio base por kilometro
-            double precioTotal = distance*precioBase;
-            Console.WriteLine(precioTotal);
+            // Calcular el precio total
+            double precioTotal = calcularprecio(request);
 
             return Ok(new
             {
