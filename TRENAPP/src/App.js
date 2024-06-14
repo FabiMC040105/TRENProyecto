@@ -56,6 +56,8 @@ function App() {
 
   function NavegarAComprarTiquetes() {
     setView('comprarTiquetes');
+    //
+    //
   }
 
   function VolverAHome() {
@@ -76,80 +78,63 @@ function App() {
     <div className="App">
       <header className="App-header">
       {currentTime}
-      <table>
-        <thead>
-          <tr>
-            <th>Start</th>
-            <th>End</th>
-            <th>Cost</th>
-            <th>Distance</th>
-          </tr>
-        </thead>
-      {routes.map((element, index) => 
-        <tr id={index}>
-          <td>{element.start}</td>
-          <td>{element.end}</td>
-          <td>{element.cost}</td>
-          <td>{element.distanceInKm}</td>
-        </tr>
-      )}    
-      </table>  
-        {view === 'home' && (
-          <div>
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>Bienvenidos a TREN</p>
-            <br />
-            <button onClick={NavegaRegistro}>Registrarme</button>
-            <button onClick={NavegaLogin}>Iniciar Sesion</button>
-          </div>
-        )}
-        {view === 'registro' && (
-          <div>
-            <button onClick={postData}>Enviar Datos</button>
-            <br />
-            <Registro />
-            <button onClick={RegistroUsuario}>Registrar Usuario</button>
-            <br />
-            <button onClick={VolverAHome}>Volver</button>
-          </div>
-        )}
+      {view === 'home' && (
+        <div>
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>Bienvenidos a TREN</p>
+          <br />
+          <button onClick={NavegaRegistro}>Registrarme</button>
+          <button onClick={NavegaLogin}>Iniciar Sesion</button>
+        </div>
+      )}
+      {view === 'registro' && (
+        <div>
+          <button onClick={postData}>Enviar Datos</button>
+          <br />
+          <Registro />
+          <button onClick={RegistroUsuario}>Registrar Usuario</button>
+          <br />
+          <button onClick={VolverAHome}>Volver</button>
+        </div>
+      )}
 
-        {view === 'login' && (
-          <div>
-            <br />
-            <Login />
-            <button onClick={IngresaUsuario}>Ingresar Usuario</button>
-            <br />
-            <button onClick={VolverAHome}>Volver</button>
-          </div>
-        )}
+      {view === 'login' && (
+        <div>
+          <br />
+          <Login />
+          <button onClick={IngresaUsuario}>Ingresar Usuario</button>
+          <br />
+          <button onClick={VolverAHome}>Volver</button>
+        </div>
+      )}
 
-        {view === 'menuPrincipal' && (
-          <MenuPrincipal 
-          navegarARutaTrenes={NavegarARutaTrenes} 
-          navegarAComprarTiquetes={NavegarAComprarTiquetes}
-          />
-        )}
+      {view === 'menuPrincipal' && (
+        <MenuPrincipal 
+        navegarARutaTrenes={NavegarARutaTrenes} 
+        navegarAComprarTiquetes={NavegarAComprarTiquetes}
+        />
+      )}
 
-        {view === 'RutaTrenes' && (
-          <div style={{ width: '100vw', height: '100vh', margin: '0 auto', border: '1px solid black', position: 'relative' }}>
-            <GraphComponent estaciones={estaciones} conexion={conexion} />
-            <RutaTrenes />
-            <button 
-              onClick={VolverAMenuPrincipal}>Volver al Menú Principal
-            </button>
-          </div>
-        )}
+      {view === 'RutaTrenes' && (
+        <div style={{ width: '100vw', height: '100vh', margin: '0 auto', border: '1px solid black', position: 'relative' }}>
+          <GraphComponent estaciones={estaciones} conexion={conexion} />
+          <RutaTrenes />
+          <button 
+            onClick={VolverAMenuPrincipal}>Volver al Menú Principal
+          </button>
+        </div>
+      )}
 
-        {view === 'comprarTiquetes' && (
-          <div>
-            <ComprarTiquetes />
-            <button onClick={VolverAMenuPrincipal}>Volver al Menú Principal</button>
-          </div>
-        )}
+      {view === 'comprarTiquetes' && (
+        <div>
+          <ComprarTiquetes />
+          <button onClick={VolverAMenuPrincipal}>Volver al Menú Principal</button>
+        </div>
+      )}
       </header>
     </div>
   );
 }
+
 
 export default App;

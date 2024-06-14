@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Origen": "Santo Domingo",
+    "Destino": "Zapote",
+    "Fecha": "2024-07-02",
+    "Cantidad": "1",
+    "Ruta": "Santo Domingo -\u003E Tib\u00E1s -\u003E San Jos\u00E9 -\u003E Zapote",
+    "Costo": "250"
+  },
+  {
+    "Origen": "Santo Domingo",
+    "Destino": "Zapote",
+    "Fecha": "2024-07-02",
+    "Cantidad": "1",
+    "Ruta": "Santo Domingo -\u003E Tib\u00E1s -\u003E San Jos\u00E9 -\u003E Zapote",
+    "Costo": "250"
+  }
+]

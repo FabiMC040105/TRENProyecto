@@ -1,0 +1,42 @@
+﻿[
+  {
+    "Origen": "Santo Domingo",
+    "Destino": "Zapote",
+    "Fecha": "2024-07-02",
+    "Cantidad": "1",
+    "Ruta": "Santo Domingo -> Tibás -> San José -> Zapote",
+    "Costo": "250"
+  },
+  {
+    "Origen": "Santo Domingo",
+    "Destino": "Zapote",
+    "Fecha": "2024-07-02",
+    "Cantidad": "1",
+    "Ruta": "Santo Domingo -> Tibás -> San José -> Zapote",
+    "Costo": "250"
+  },
+  {
+    "Origen": "Sabanilla",
+    "Destino": "San José",
+    "Fecha": "2024-07-05",
+    "Cantidad": "1",
+    "Ruta": "Sabanilla -> San José",
+    "Costo": "150"
+  },
+  {
+    "Origen": "Sabanilla",
+    "Destino": "Tibás",
+    "Fecha": "2024-07-05",
+    "Cantidad": "3",
+    "Ruta": "Sabanilla -> Guadalupe -> Moravia -> Tibás",
+    "Costo": "648"
+  },
+  {
+    "Origen": "San José",
+    "Destino": "Tibás",
+    "Fecha": "2024-07-05",
+    "Cantidad": "3",
+    "Ruta": "San José -> Tibás",
+    "Costo": "216"
+  }
+]
