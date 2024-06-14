@@ -38,5 +38,45 @@
     "Cantidad": "3",
     "Ruta": "San José -> Tibás",
     "Costo": "216"
+  },
+  {
+    "Origen": "Tres Ríos",
+    "Destino": "Zapote",
+    "Fecha": "2024-06-20",
+    "Cantidad": "1",
+    "Ruta": "Tres Ríos -> Zapote",
+    "Costo": "200"
+  },
+  {
+    "Origen": "Tres Ríos",
+    "Destino": "Zapote",
+    "Fecha": "2024-06-20",
+    "Cantidad": "1",
+    "Ruta": "Tres Ríos -> Zapote",
+    "Costo": "200"
+  },
+  {
+    "Origen": "San José",
+    "Destino": "Zapote",
+    "Fecha": "2024-06-20",
+    "Cantidad": "1",
+    "Ruta": "San José -> Zapote",
+    "Costo": "100"
+  },
+  {
+    "Origen": "San José",
+    "Destino": "Heredia",
+    "Fecha": "2024-06-20",
+    "Cantidad": "1",
+    "Ruta": "San José -> Tibás -> Santo Domingo -> Heredia",
+    "Costo": "250"
+  },
+  {
+    "Origen": "San José",
+    "Destino": "Heredia",
+    "Fecha": "2024-06-20",
+    "Cantidad": "3",
+    "Ruta": "San José -> Tibás -> Santo Domingo -> Heredia",
+    "Costo": "720"
   }
 ]

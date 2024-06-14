@@ -6,6 +6,7 @@ import GraphComponent from './GraphComponent';
 import grafo from './GraphComponent';
 import RutaTrenes from './RutaTrenes';
 import ComprarTiquetes from './ComprarTiquetes';
+import Reservaciones from './Reservaciones';
 import React, { useEffect, useState } from 'react';
 import { GetTrainRoutes } from './Controller';
 
@@ -60,6 +61,11 @@ function App() {
     //
   }
 
+  function NavegarAReservaciones() {
+    setView('Reservaciones');
+    
+  }
+
   function VolverAHome() {
     setView('home');
   }
@@ -112,6 +118,8 @@ function App() {
         <MenuPrincipal 
         navegarARutaTrenes={NavegarARutaTrenes} 
         navegarAComprarTiquetes={NavegarAComprarTiquetes}
+        navegarAReservaciones={NavegarAReservaciones}
+
         />
       )}
 
@@ -128,6 +136,12 @@ function App() {
       {view === 'comprarTiquetes' && (
         <div>
           <ComprarTiquetes />
+          <button onClick={VolverAMenuPrincipal}>Volver al Menú Principal</button>
+        </div>
+      )}
+      {view === 'Reservaciones' && (
+        <div>
+          <Reservaciones />
           <button onClick={VolverAMenuPrincipal}>Volver al Menú Principal</button>
         </div>
       )}

@@ -65,3 +65,5 @@ C:\Users\gonza\OneDrive - Estudiantes ITCR\TRENProyecto\TrenServer\WebApplicatio
 C:\Users\gonza\OneDrive - Estudiantes ITCR\TRENProyecto\TrenServer\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\gonza\OneDrive - Estudiantes ITCR\TRENProyecto\TrenServer\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
 C:\Users\XPC\OneDrive - Estudiantes ITCR\Escritorio\TRENProyecto\TrenServer\WebApplication1\bin\Debug\net8.0\Compras.json
+C:\Users\gonza\OneDrive - Estudiantes ITCR\TRENProyecto\TrenServer\WebApplication1\bin\Debug\net8.0\Compras.json
+C:\Users\gonza\OneDrive - Estudiantes ITCR\TRENProyecto\TrenServer\WebApplication1\bin\Debug\net8.0\Newtonsoft.Json.dll

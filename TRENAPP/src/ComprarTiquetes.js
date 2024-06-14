@@ -6,8 +6,6 @@ function ComprarTiquetes() {
   const [destino, setDestino] = useState('');
   const [fecha, setFecha] = useState('');
   const [cantidad, setCantidad] = useState(1);
-  const [precioBase, setPrecioBase] = useState(100); // Precio base por tiquete
-  const [precioTotal, setPrecioTotal] = useState(0);
   const [respuestaCompra, setRespuestaCompra] = useState(null);
 
 

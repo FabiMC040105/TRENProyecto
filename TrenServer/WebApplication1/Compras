@@ -1,1 +1,34 @@
-{"text":"hola"}
+﻿[
+  {
+    "Origen": "Zapote",
+    "Destino": "Tres Ríos",
+    "Fecha": "2024-06-20",
+    "Cantidad": "3",
+    "Ruta": "Zapote -> Tres Ríos",
+    "Costo": "576"
+  },
+  {
+    "Origen": "San Pedro",
+    "Destino": "Sabanilla",
+    "Fecha": "2024-06-16",
+    "Cantidad": "3",
+    "Ruta": "San Pedro -> San José -> Zapote -> Tres Ríos -> Sabanilla",
+    "Costo": "1656"
+  },
+  {
+    "Origen": "San Pedro",
+    "Destino": "Sabanilla",
+    "Fecha": "2024-06-16",
+    "Cantidad": "6",
+    "Ruta": "San Pedro -> San José -> Zapote -> Tres Ríos -> Sabanilla",
+    "Costo": "3105"
+  },
+  {
+    "Origen": "Cartago",
+    "Destino": "San José",
+    "Fecha": "2024-06-19",
+    "Cantidad": "1",
+    "Ruta": "Cartago -> Tres Ríos -> Zapote -> San José",
+    "Costo": "575"
+  }
+]

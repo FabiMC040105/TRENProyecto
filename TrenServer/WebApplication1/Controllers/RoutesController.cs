@@ -93,6 +93,23 @@ namespace WebApplication1.Controllers
             return RoutesDB.routes;
         }
 
+        [HttpGet("reservations")]
+        public IActionResult GetReservations()
+        {
+            // Ruta al archivo JSON
+            string Path = "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Compras";
+
+            if (!System.IO.File.Exists(Path))
+            {
+                return NotFound("El archivo Compras.json no se encuentra.");
+            }
+
+            var jsonData = System.IO.File.ReadAllText(Path);
+            var compras = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Compra>>(jsonData);
+
+            return Ok(compras);
+        }
+
         [HttpPost]
         public IActionResult PostTicketPurchase([FromBody] TicketPurchaseRequest request)
         {
@@ -111,7 +128,7 @@ namespace WebApplication1.Controllers
 
             // Calcular el precio total
             double precioTotal = calcularprecio(request);
-            string Path = "C:\\Users\\XPC\\OneDrive - Estudiantes ITCR\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Compras.json";
+            string Path = "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Compras";
             var Json = new JsonFile();
             string cant = request.Cantidad.ToString();
             string precio = precioTotal.ToString();
@@ -130,6 +147,20 @@ namespace WebApplication1.Controllers
             });
         }
     }
+
+
+    public class Compra
+    {
+        public string Origen { get; set; }
+        public string Destino { get; set; }
+        public string Fecha { get; set; }
+        public int Cantidad { get; set; }
+        public string Ruta { get; set; }
+        public int Costo { get; set; }
+    }
+
+
+
     public class TicketPurchaseRequest
     {
         public string Origen { get; set; }

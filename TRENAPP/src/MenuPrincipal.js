@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MenuPrincipal({ navegarARutaTrenes,  navegarAComprarTiquetes }) {
+function MenuPrincipal({ navegarARutaTrenes,  navegarAComprarTiquetes, navegarAReservaciones }) {
   return (
     <div>
       <h2>Menú Principal</h2>
@@ -10,7 +10,7 @@ function MenuPrincipal({ navegarARutaTrenes,  navegarAComprarTiquetes }) {
       <br></br>
       <button  onClick={navegarAComprarTiquetes} >Comprar Tiquetes</button>  
       <br></br>
-      <button>Reservaciones</button>  
+      <button onClick={navegarAReservaciones}>Reservaciones</button>  
     </div>
   );
 }
