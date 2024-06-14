@@ -2,6 +2,11 @@
 using WebApplication1.Entities;
 using System.Collections.Generic;
 using WebApplication1.DataStructures;
+using System.Text.Json;
+using System.Text;
+using System.IO;
+using System.Xml;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace WebApplication1.Controllers
@@ -55,7 +60,7 @@ namespace WebApplication1.Controllers
                 grafo.AddEdge(from, to, weight);
             }
         }
-
+       
         private double calcularprecio(TicketPurchaseRequest request)
         {
             // Calcular la ruta más corta usando Dijkstra
@@ -106,6 +111,11 @@ namespace WebApplication1.Controllers
 
             // Calcular el precio total
             double precioTotal = calcularprecio(request);
+            string Path = "C:\\Users\\XPC\\OneDrive - Estudiantes ITCR\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Compras.json";
+            var Json = new JsonFile();
+            string cant = request.Cantidad.ToString();
+            string precio = precioTotal.ToString();
+            Json.TicketPurchaseJson(request.Origen, request.Destino, request.Fecha, cant, string.Join(" -> ", path), precio, Path);
 
             return Ok(new
             {
@@ -126,6 +136,68 @@ namespace WebApplication1.Controllers
         public string Destino { get; set; }
         public string Fecha { get; set; }
         public int Cantidad { get; set; }
+
+    }
+
+    public class TicketPurchase
+    {
+        public string Origen { get; set; }
+        public string Destino { get; set; }
+        public string Fecha { get; set; }
+        public string Cantidad { get; set; }
+        public string Ruta { get; set; }
+        public string Costo { get; set; }
+
+    }
+
+    public class JsonFile
+    {
+        public int TicketPurchaseJson(string origen, string destino, string fecha, string cantidad, string ruta, string costo, string filePath)
+        {
+            try
+            {
+                // Leer el contenido actual del archivo JSON
+                string jsonString = File.Exists(filePath) ? File.ReadAllText(filePath) : "[]";
+
+                List<TicketPurchase> ticketPurchases;
+
+                // Deserializar el JSON en una lista de TicketPurchase
+                try
+                {
+                    ticketPurchases = JsonSerializer.Deserialize<List<TicketPurchase>>(jsonString);
+                }
+                catch (JsonException)
+                {
+                    ticketPurchases = new List<TicketPurchase>();
+                }
+
+                // Crear un nuevo objeto TicketPurchase y añadirlo a la lista
+                var newTicketPurchase = new TicketPurchase
+                {
+                    Origen = origen,
+                    Destino = destino,
+                    Fecha = fecha,
+                    Cantidad = cantidad,
+                    Ruta = ruta,
+                    Costo = costo
+                };
+                ticketPurchases.Add(newTicketPurchase);
+
+                // Serializar la lista actualizada a un string JSON
+                var options = new JsonSerializerOptions { WriteIndented = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping };
+                string updatedJsonString = JsonSerializer.Serialize(ticketPurchases, options);
+
+                // Escribir el nuevo JSON en el archivo
+                File.WriteAllText(filePath, updatedJsonString, Encoding.UTF8);
+
+                return 0; // Indicar éxito
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocurrió un error: {ex.Message}");
+                return -1; // Indicar error
+            }
+        }
     }
 }
 
