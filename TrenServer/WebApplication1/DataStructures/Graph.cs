@@ -38,6 +38,20 @@
         }
     }
 
+    // Comparador para el SortedSet
+    public class DistanceVertexComparer : IComparer<(int distance, Vertex vertex)>
+    {
+        public int Compare((int distance, Vertex vertex) x, (int distance, Vertex vertex) y)
+        {
+            int result = x.distance.CompareTo(y.distance);
+            if (result == 0)
+            {
+                result = x.vertex.Name.CompareTo(y.vertex.Name);
+            }
+            return result;
+        }
+    }
+
     // Clase que representa el grafo
     public class Graph
     {
@@ -98,7 +112,7 @@
 
             var distances = new Dictionary<Vertex, int>();
             var previous = new Dictionary<Vertex, Vertex>();
-            var priorityQueue = new SortedSet<(int distance, Vertex vertex)>();
+            var priorityQueue = new SortedSet<(int distance, Vertex vertex)>(new DistanceVertexComparer());
 
             foreach (var vertex in _vertices.Values)
             {

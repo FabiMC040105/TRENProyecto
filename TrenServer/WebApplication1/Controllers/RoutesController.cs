@@ -91,9 +91,9 @@ namespace WebApplication1.Controllers
                 Destino = request.Destino,
                 Fecha = request.Fecha,
                 Cantidad = request.Cantidad,
-                PrecioTotal = precioTotal,
-                Distancia = distance,
-                Ruta = string.Join(" -> ", path)
+                precioTotal = precioTotal,
+                distancia = distance,
+                ruta = string.Join(" -> ", path)
             });
         }
     }

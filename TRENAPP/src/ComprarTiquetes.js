@@ -32,7 +32,7 @@ function ComprarTiquetes() {
 
         if (response.ok) {
             const data = await response.json();
-            alert(`Compra realizada con éxito. Precio total: ${data.PrecioTotal} colones. Ruta: ${data.Ruta}. Distancia: ${data.Distancia}`);
+            alert(`Compra realizada con éxito. Precio total: ${data.precioTotal} colones. Ruta: ${data.ruta}. Distancia: ${data.distancia}`);
         } else {
             const errorText = await response.text(); // Obtener el texto del error
             alert(`Error al realizar la compra: ${errorText}`);
