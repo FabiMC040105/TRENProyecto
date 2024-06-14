@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\",
+  "WorkspaceRootPath": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|c:\\users\\gonza\\onedrive - estudiantes itcr\\trenproyecto\\trenserver\\webapplication1\\controllers\\routescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|c:\\users\\aless\\onedrive\\escritorio\\trenproyecto\\trenserver\\webapplication1\\controllers\\routescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\routescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|c:\\users\\gonza\\onedrive - estudiantes itcr\\trenproyecto\\trenserver\\webapplication1\\compras||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\compras||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\compras||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\datastructures\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\datastructures\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\datastructures\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entities\\trainroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\webapplication1\\entities\\routesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\webapplication1\\entities\\routesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99017D96-C2D3-416A-B7AD-1DF9DC0C38A1}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\entities\\routesdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,40 +50,39 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Compras",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Compras",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Compras",
               "RelativeDocumentMoniker": "WebApplication1\\Compras",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Compras",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Compras",
               "RelativeToolTip": "WebApplication1\\Compras",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-06-14T06:10:27.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T06:10:27.144Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Graph.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\DataStructures\\Graph.cs",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\DataStructures\\Graph.cs",
               "RelativeDocumentMoniker": "WebApplication1\\DataStructures\\Graph.cs",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\DataStructures\\Graph.cs",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\DataStructures\\Graph.cs",
               "RelativeToolTip": "WebApplication1\\DataStructures\\Graph.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAIwCAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -93,9 +92,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TrainRoute.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\TrainRoute.cs",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\TrainRoute.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Entities\\TrainRoute.cs",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\TrainRoute.cs",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\TrainRoute.cs",
               "RelativeToolTip": "WebApplication1\\Entities\\TrainRoute.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -105,9 +104,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "RoutesDB.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\RoutesDB.cs",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\RoutesDB.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Entities\\RoutesDB.cs",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\RoutesDB.cs",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Entities\\RoutesDB.cs",
               "RelativeToolTip": "WebApplication1\\Entities\\RoutesDB.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -117,11 +116,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "RoutesController.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Controllers\\RoutesController.cs",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Controllers\\RoutesController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\RoutesController.cs",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Controllers\\RoutesController.cs",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Controllers\\RoutesController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\RoutesController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwGoAAAA8AAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAYwF0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T18:21:30.748Z",
               "EditorCaption": ""
@@ -130,53 +129,49 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAvwCQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T18:20:06.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T18:20:06.533Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.Development.json",
               "RelativeDocumentMoniker": "WebApplication1\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.Development.json",
               "RelativeToolTip": "WebApplication1\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-12T00:49:00.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:49:00.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Properties\\launchSettings.json",
               "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-07T18:37:27.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T18:37:27.762Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
-              "ToolTip": "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\appsettings.json",
               "RelativeToolTip": "WebApplication1\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-12T00:48:59.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:48:59.661Z"
             }
           ]
         }

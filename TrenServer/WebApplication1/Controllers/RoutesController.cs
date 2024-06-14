@@ -97,7 +97,7 @@ namespace WebApplication1.Controllers
         public IActionResult GetReservations()
         {
             // Ruta al archivo JSON
-            string Path = "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Compras";
+            string Path = "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Compras";
 
             if (!System.IO.File.Exists(Path))
             {
@@ -128,7 +128,7 @@ namespace WebApplication1.Controllers
 
             // Calcular el precio total
             double precioTotal = calcularprecio(request);
-            string Path = "C:\\Users\\gonza\\OneDrive - Estudiantes ITCR\\TRENProyecto\\TrenServer\\WebApplication1\\Compras";
+            string Path = "C:\\Users\\Aless\\OneDrive\\Escritorio\\TRENProyecto\\TrenServer\\WebApplication1\\Compras";
             var Json = new JsonFile();
             string cant = request.Cantidad.ToString();
             string precio = precioTotal.ToString();

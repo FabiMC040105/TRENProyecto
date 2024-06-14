@@ -30,5 +30,13 @@
     "Cantidad": "1",
     "Ruta": "Cartago -> Tres Ríos -> Zapote -> San José",
     "Costo": "575"
+  },
+  {
+    "Origen": "Tibás",
+    "Destino": "Tres Ríos",
+    "Fecha": "2024-06-21",
+    "Cantidad": "1",
+    "Ruta": "Tibás -> San José -> Zapote -> Tres Ríos",
+    "Costo": "375"
   }
 ]
